@@ -1,0 +1,347 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="verticalNav.css">
+    <link rel="stylesheet" href="listCard.css">
+    <script src="https://kit.fontawesome.com/fd4e442039.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="gauche">
+            <header>
+                <h1>
+                    Nicolas Goyon
+                </h1>
+                <h2>
+                    Développeur Web
+                </h2>
+            </header>
+            <nav class="vertical">
+                <ul>
+                    <li class="active"><a href="#about">
+                            A propos de moi
+                        </a></li>
+                    <li><a href="#Experiences">
+                            Expériences
+                        </a></li>
+                    <li><a href="#Projets">
+                            Projets
+                        </a></li>
+                    <li><a href="#Formation">
+                            Formation
+                        </a></li>
+                    <li><a href="#Contact">
+                            Contact
+                        </a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div id="droite">
+            <section id="about">
+                <h3>
+                    A propos de moi
+                </h3>
+                <p>
+                    Je suis étudiant et je vise à être ingénieur informatique afin de développer mes propres projets, jeux, et outils. Je me focalise d'avantage dans des choses ayant une réelle utilité. Si les différents projets auquels je serais ammené à travailler sont lié à l'écologie, c'est d'autant mieux.
+                </p>
+            </section>
+            <section id="Experiences">
+                <h3>
+                    Experiences
+                </h3>
+                <ul class="listCard">
+                    <li data-href="https://diamantor.fr">
+                        <span class="date">Juin 2022 - Août 2022</span>
+                        <div class="contenu">
+                            <span class="titre info">Stage - Développeur analyste · Diamantor SAS
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                Stage réalisé afin de valider mon DUT informatique et gestion. Les missions étaient le
+                                développement d'outils de gestion des stocks de consommables ainsi que le développement
+                                de modules d'administration sur le site web Prestashop.
+                            </p>
+                            <div class="tags">
+                                <span class="badge info">PHP</span>
+                                <span class="badge info">Prestashop</span>
+                                <span class="badge info">JS native</span>
+                                <span class="badge info">JQuery</span>
+                                <span class="badge info">SQL</span>
+                                <span class="badge info">Bootstrap</span>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <section id="Projets">
+                <h3>
+                    Projets
+                </h3>
+                <ul class="listCard">
+                    <li data-href="https://nicolasgoyon.wordpress.com/">
+                        <img src="./images/AncienPortfollio-thumbnail.png" alt="">
+                        <div class="contenu">
+                            <span class="titre info">Ancien Portfollio
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                Ancien Portfollio réalisé en sur Wordpress durant mon DUT
+                            </p>
+                            <div class="tags">
+                                <span class="badge info">Wordpress</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li data-href="https://github.com/nicolas-goyon/Algebre-web">
+                        <img src="./images/Algebre-thumbnail.png" alt="">
+                        <div class="contenu">
+                            <span class="titre info">Algèbre relationnelle
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                Site web permettant de faire des requêtes d'alèbre relationnelle, les tester, les
+                                enregistrer, ainsi que faire des exercices d'algèbre relationnelle.
+                            </p>
+                            <div class="tags">
+                                <span class="badge warning">En cours de développement</span>
+                                <span class="badge info">Algebre relationnelle</span>
+                                <span class="badge info">NodeJS</span>
+                                <span class="badge info">Express</span>
+                                <span class="badge info">PostgresSQL</span>
+                                <span class="badge info">TailwindCSS</span>
+                                <span class="badge info">LaTex</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li data-href="https://flochaz.itch.io/kallogs-island">
+                        <img src="./images/GameJam21-thumbnail.png" alt="">
+                        <div class="contenu">
+                            <span class="titre info">Code Game Jam (Janvier 2021)
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                Game Jam sur le thème de la chasse au trésor, réalisé en 48h avec Unity. Le but du jeu
+                                est de chasser avec un arc des trésors se déplaçant sur une carte. Le jeu est dans un
+                                style pixel art.
+                            </p>
+                            <div class="tags">
+                                <span class="badge info">Unity</span>
+                                <span class="badge info">C#</span>
+                                <span class="badge info">Pixel Art</span>
+                                <span class="badge info">Game Jam</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Formation">
+                <h3>
+                    Formation
+                </h3>
+                <ul class="listCard">
+                    <li data-href="#">
+                        <span class="date">2022 - 2025</span>
+                        <div class="contenu">
+                            <span class="titre info">Diplôme d'ingénieur informatique et gestion
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                Polytech Montpellier, Montpellier, France
+                            </p>
+                        </div>
+                    </li>
+                    <li data-href="#">
+                        <span class="date">2020 - 2022</span>
+                        <div class="contenu">
+                            <span class="titre info">DUT informatique et gestion
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                IUT Montpellier-Sète, Montpellier, France
+                            </p>
+                        </div>
+                    </li>
+                    <li data-href="#">
+                        <span class="date">2020</span>
+                        <div class="contenu">
+                            <span class="titre info">BAC Scientifique Spécialité SVT
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                Lycée Rive Gauche, Toulouse, France
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Contact">
+                <h3>
+                    Contact
+                </h3>
+                <ul class="listCard">
+                    <li data-href="https://www.linkedin.com/in/nicolas-goyon-6575ab1b6/">
+                        <div class="thumbnail">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </div>
+                        <div class="contenu">
+                            <span class="titre info">Linkedin
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </div>
+                    </li>
+                    <li data-href="https://github.com/nicolas-goyon">
+                        <div class="thumbnail">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </div>
+                        <div class="contenu">
+                            <span class="titre info">Github
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </div>
+                    </li>
+                    <li data-href="mailto:nicolas_goyon@orange.fr">
+                        <div class="thumbnail">
+                            <i class="fa-solid fa-envelope fa-2xl"></i>
+                        </div>
+                        <div class="contenu">
+                            <span class="titre info">Email
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    strokeWidth={1.5} stroke="currentColor" class="icon-xs fleche">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                            <p class="description">
+                                nicolas_goyon@orange.fr
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var main = document.querySelector('#main');
+    // On écoute l'événement mousemove sur le div
+    main.addEventListener('mousemove', function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        // On modifie le radial-gradient en fonction de la position de la souris
+        main.style.background = 'radial-gradient(400px at ' + x + 'px ' + y + 'px, rgba(44, 53, 178, 0.504), transparent 80%)';
+    });
+
+
+    let verticalButton = document.querySelectorAll("nav.vertical li");
+    verticalButton.forEach((target) => {
+        target.addEventListener("click", (e) => {
+            verticalButton.forEach((target2) => {
+                target2.classList.remove("active");
+            })
+            target.classList.add("active");
+            let anchor = target.querySelector("a").href;
+            anchor = anchor.split("#").slice(-1)[0]
+            let section = document.querySelector("#" + anchor);
+            section.classList.add("active");
+            setTimeout((e) => {
+                section.classList.remove("active");
+            }, 2000);
+        })
+    })
+
+    // Listener sur chaque élement de la liste des projets
+    var listCard = document.querySelectorAll('.listCard li');
+    listCard.forEach((target) => {
+        let siblings = target.closest("ul").querySelectorAll("li");
+        target.addEventListener("mouseover", (e) => {
+            siblings.forEach((target2) => {
+                target2.classList.add("disabled");
+            })
+            target.classList.remove("disabled");
+        })
+        target.addEventListener("mouseout", (e) => {
+            siblings.forEach((target2) => {
+                target2.classList.remove("disabled");
+            })
+        })
+        target.addEventListener("click", (e) => {
+            let url = target.getAttribute("data-href");
+            window.open(url, '_blank');
+        })
+    })
+
+    let sections = document.querySelectorAll("section");
+    main.addEventListener("scroll", (e) => {
+        let scroll = main.scrollTop
+        sections.forEach((target) => {
+            let offset = target.offsetTop;
+            let height = target.offsetHeight;
+            if (scroll >= offset && scroll < offset + height) {
+                let id = target.getAttribute("id");
+                let button = document.querySelector("nav.vertical li a[href='#" + id + "']");
+                verticalButton.forEach((target2) => {
+                    target2.classList.remove("active");
+                })
+                button.closest("li").classList.add("active")
+            }
+        })
+    })
+
+
+</script>
+<style>
+
+</style>
