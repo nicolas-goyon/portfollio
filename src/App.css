@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+:root {
+  --text-color: #7e7e7e;
+  --text-color-bold: #b6b6b6;
+
+
+  --primary: 13 122 250;
+  --success: 20 200 35;
+  --danger: 199 9 9;
+  --warning: 255 161 30;
+  --info: 45 212 130;
+  --light: 173 173 173;
+  --dark: 30 30 30;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  scroll-behavior: smooth;
+}
+html, #root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  width: 100%;  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: #000536;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body a {
+  color: var(--text-color-bold);
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+body h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-color-bold);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--text-color-bold);
+}
+
+body h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color-bold);
+}
+
+#main {
+  /* width: 100%; */
+  height: 100%;
+  background: radial-gradient(400px at 800px 200px, rgba(44, 53, 178, 0.504), transparent 80%);
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow-y: scroll;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section h3 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 1s ease-in; 
+}
+section.active {
+  background-color: rgb(100,100,100, .5);
+}
+
+
+.icon-l {
+  width: 5rem;
+  height: 5rem;
+  stroke-width: 0.2rem;
+}
+
+.icon-m {
+  width: 2.5rem;
+  height: 2.5rem;
+  stroke-width: 0.4rem;
+}
+
+.icon-s {
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 0.15rem;
+}
+
+.icon-xs {
+  width: 0.75rem;
+  height: 0.75rem;
+  stroke-width: 0.15rem;
+}
+
+.primary {
+  color: rgb(var(--primary));
+}
+
+.success {
+  color: rgb(var(--success));
+}
+
+.danger {
+  color: rgb(var(--danger));
+}
+
+.warning {
+  color: rgb(var(--warning));
+}
+
+.info {
+  color: rgb(var(--info));
+}
+
+.light {
+  color: rgb(var(--light));
+}
+
+.dark {
+  color: rgb(var(--dark));
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary));
+}
+
+.bg-success {
+  background-color: rgb(var(--success));
+}
+
+.bg-danger {
+  background-color: rgb(var(--danger));
+}
+
+.bg-warning {
+  background-color: rgb(var(--warning));
+}
+
+.bg-info {
+  background-color: rgb(var(--info));
+}
+
+.bg-light {
+  background-color: rgb(var(--light));
+}
+
+.bg-dark {
+  background-color: rgb(var(--dark));
+}
+
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* width larger when hover */
+::-webkit-scrollbar:hover {
+  background: #555;
+  width: 10px;
 }

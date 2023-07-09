@@ -1,0 +1,11 @@
+
+#droite {
+    margin-top: 10%;
+    padding-bottom: 100px;
+    width: 50%;
+    float: right;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  

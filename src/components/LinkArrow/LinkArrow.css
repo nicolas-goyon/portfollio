@@ -1,0 +1,9 @@
+
+.linkArrow {
+    padding-left: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.linkArrow.active {
+    transform: translate(4px, -4px);
+}

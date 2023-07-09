@@ -1,0 +1,46 @@
+span.badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 99999px;
+    background-color: rgb(var(--primary) / 40%);
+    color: rgb(var(--primary));
+    font-weight: 500;
+    line-height: 1.25rem;
+    font-size: .75rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+span.badge.primary {
+    background-color: rgb(var(--primary)/.2);
+    color: rgb(var(--primary));
+}
+
+span.badge.secondary {
+    background-color: rgb(var(--secondary) / 20%);
+    color: rgb(var(--secondary));
+}
+
+span.badge.success {
+    background-color: rgb(var(--success) / 20%);
+    color: rgb(var(--success));
+}
+
+span.badge.danger {
+    background-color: rgb(var(--danger) / 20%);
+    color: rgb(var(--danger));
+}
+
+span.badge.warning {
+    background-color: rgb(var(--warning) / 20%);
+    color: rgb(var(--warning));
+}
+
+span.badge.info {
+    background-color: rgb(var(--info) / 20%);
+    color: rgb(var(--info));
+}
