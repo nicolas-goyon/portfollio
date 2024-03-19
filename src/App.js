@@ -1,21 +1,9 @@
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Gauche from './components/Partie/Gauche';
 import Droite from './components/Partie/Droite';
 
 function App() {
-
-  // var main = document.querySelector('#main');
-  // // On écoute l'événement mousemove sur le div
-  // main.addEventListener('mousemove', function (e) {
-  //     var x = e.clientX;
-  //     var y = e.clientY;
-  //     // On modifie le radial-gradient en fonction de la position de la souris
-  //     main.style.background = 'radial-gradient(400px at ' + x + 'px ' + y + 'px, rgba(44, 53, 178, 0.504), transparent 80%)';
-  // });
-
-
 
   useEffect(() => {
 
@@ -63,11 +51,20 @@ function App() {
     })
   }, [])
 
+  let isEnglish = window.location.href.includes("/en");
+  let inspirepar = !isEnglish? "Portfolio inspiré par" : "Portfolio inspired by";
 
   return (
     <div id="main">
       <Gauche />
       <Droite />
+      <footer>
+        <p>
+          Nicolas Goyon - 2023
+          <br />
+          {inspirepar} <a href="https://brittanychiang.com/">Brittany Chiang</a>
+        </p>
+      </footer>
     </div>
   );
 }

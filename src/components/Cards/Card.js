@@ -47,6 +47,8 @@ export default function Card({ link, date, title, description, tags, img, icon }
         });
 
     }, [descRef, cardRef]);
+
+    
     return (
         <li data-href={link} ref={cardRef} className="card">
             {
@@ -67,7 +69,7 @@ export default function Card({ link, date, title, description, tags, img, icon }
                 }
                 <div className="tags">
                     {tags && tags.map((tag, index) => {
-                        if (tag === 'En cours de développement') {
+                        if (tag === 'En cours de développement' || tag === 'Work in progress') {
                             return <Badge key={index} color="warning" name={tag} />
                         } else return (
                             <Badge key={index} name={tag} color="info" />

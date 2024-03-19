@@ -2,31 +2,45 @@ import React, { useEffect } from "react";
 import Card from "./Card";
 import "./ListCard.css";
 
+function mouseouverHandler(e) {
+    let siblings = e.target.closest("ul").querySelectorAll("li");
+    siblings.forEach((target2) => {
+        target2.classList.add("disabled");
+    })
+    e.target.classList.remove("disabled");
+}
+
+function mouseoutHandler(e) {
+    let siblings = e.target.closest("ul").querySelectorAll("li");
+    siblings.forEach((target2) => {
+        target2.classList.remove("disabled");
+    })
+}
+
+function clickHandler(e) {
+    let url = e.target.getAttribute("data-href");
+    if (url && url != "" && url != "#")
+        window.open(url, '_blank');
+}
+
 export default function ListCard({ list }) {
+    const firstLoad = React.useRef(false);
+
     useEffect(() => {
+        if (firstLoad.current) return;
 
         // Listener sur chaque élement de la liste des projets
         var listCard = document.querySelectorAll('.listCard li');
         listCard.forEach((target) => {
-            let siblings = target.closest("ul").querySelectorAll("li");
-            target.addEventListener("mouseover", (e) => {
-                siblings.forEach((target2) => {
-                    target2.classList.add("disabled");
-                })
-                target.classList.remove("disabled");
-            })
-            target.addEventListener("mouseout", (e) => {
-                siblings.forEach((target2) => {
-                    target2.classList.remove("disabled");
-                })
-            })
-            target.addEventListener("click", (e) => {
-                let url = target.getAttribute("data-href");
-                if (url && url != "" && url != "#")
-                    window.open(url, '_blank');
-            })
-        })
+            if (!target.hasAttribute("data-event-listeners-added")) {
+                target.addEventListener("mouseover", mouseouverHandler);
+                target.addEventListener("mouseout", mouseoutHandler);
+                target.addEventListener("click", clickHandler);
+                target.setAttribute("data-event-listeners-added", true);
+            }
+        });
 
+        firstLoad.current = true;
     }, [])
     return (
         <ul className="listCard">
