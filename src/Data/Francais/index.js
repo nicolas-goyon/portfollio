@@ -28,7 +28,7 @@ const experienceList = [
     {
         title: "Stage Mobilité Internationale - Développeur Unity AR/VR · Ulster University",
         date: "Avril 2024 - Août 2024",
-        description: "Stage en cours réalisé à l'Université d'Ulster à Derry/LondonDerry - Royaume-Unis, axé sur le développement de logiciels ou jeux vidéos pour de la réalité virtuelle ou augmentée. Le stage venant de commencer, il n'y a pas encore de retour sur l'expérience.",
+        description: "Je suis actuellement en stage à l'Université d'Ulster à Derry/LondonDerry, au Royaume-Uni. Ce stage se concentre sur le développement de logiciels et de jeux vidéo pour la réalité virtuelle et augmentée. Étant donné que je viens tout juste de commencer, je n'ai pas encore de retour d'expérience à partager. Cependant, je suis impatient de développer mes compétences dans ce domaine passionnant et en constante évolution.",
         tags: ["Unity", "C#", "AR", "VR", "Jeux vidéos", "Logiciels", "Anglais"],
         link: "https://www.ulster.ac.uk/news/2022/august/spar-ni-creates-virtual-world-with-ulster-universitys-new-lab"
     },
@@ -58,11 +58,11 @@ const projectsList = [
         img: "/images/GameJam21-thumbnail.png"
     },
     {
-        title: "Ancien Portfollio",
-        description: "Ancien Portfollio réalisé en sur Wordpress durant mon DUT.",
-        tags: ["Wordpress"],
-        link: "https://nicolasgoyon.wordpress.com/",
-        img: "/images/AncienPortfollio-thumbnail.png"
+        title: "Kitchen Chaos",
+        description: "Dans le cadre d'un cours de 10 heures dispensé par le youtubeur CodeMonkey, j'ai développé un jeu vidéo 3D utilisant le moteur de jeu Unity. Le concept du jeu consiste à préparer des plats en suivant les instructions des clients. Les graphismes sont simples et les animations basiques, mais le jeu offre une expérience interactive agréable. Ce projet m'a permis d'acquérir des compétences solides dans la création de jeux vidéo avec Unity, notamment en ce qui concerne les fonctionnalités de base.",
+        tags: ["Unity", "C#", "Cours", "Autonomie"],
+        link: "https://github.com/nicolas-goyon/Unity-learning",
+        img: "/images/KitchenChaosLogo.png"
     }
 ];
 

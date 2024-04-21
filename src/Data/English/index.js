@@ -28,7 +28,7 @@ const experienceList = [
     {
       title : "Internationnal Mobility Internship - Unity AR/VR Developer · Ulster University",
         date : "April 2024 - August 2024",
-        description : "Ongoing internship at Ulster University in Derry/LondonDerry - United Kingdom, focused on the development of software or video games for virtual or augmented reality. The internship has just started, so there is no feedback on the experience yet.",
+        description : "I am currently doing an internship at Ulster University in Derry/LondonDerry, United Kingdom. The internship focuses on the development of software and video games for virtual and augmented reality. Since I have just started, I do not yet have any feedback on the experience. However, I am eager to develop my skills in this exciting and constantly evolving field.",
         tags : ["Unity", "C#", "AR", "VR", "Video games", "Software", "English"],
         link : "https://www.ulster.ac.uk/news/2022/august/spar-ni-creates-virtual-world-with-ulster-universitys-new-lab"  
     },
@@ -58,11 +58,11 @@ const projectsList = [
         img: "/images/GameJam21-thumbnail.png"
     },
     {
-        title: "Old Portfolio",
-        description: "Old Portfolio made on Wordpress during my DUT.",
-        tags: ["Wordpress"],
-        link: "https://nicolasgoyon.wordpress.com/",
-        img: "/images/AncienPortfollio-thumbnail.png"
+        title: "Kitchen Chaos",
+        description: "This project is a video game created by following a 10-hour course by the YouTuber CodeMonkey on Unity. The goal of the game is to prepare meals according to the recipes given by customers. The game is in 3D with simple animations and basic interactions. The project covers a large part of the basic functionalities of creating a video game with Unity.",
+        tags: ["Unity", "C#", "Course", "Autonomy"],
+        link: "https://github.com/nicolas-goyon/Unity-learning",
+        img: "/images/KitchenChaosLogo.png"
     }
 ];
 
