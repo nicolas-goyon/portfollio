@@ -5,7 +5,6 @@ import Badge from "../Badge/Badge";
 import "./Card.css";
 
 function checkOverflow(descRef, cardRef, description) {
-    let card = cardRef.current;
     let desc = descRef.current;
     const fontSizeRem = 1.5; // 1rem
     const fontSizePx = parseFloat(getComputedStyle(document.documentElement).fontSize) * fontSizeRem;

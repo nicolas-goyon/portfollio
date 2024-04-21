@@ -1,30 +1,14 @@
 import React from "react";
 import "./Gauche.css";
+import {Gauche as GaucheFr} from '../../Data/Francais';
+import {Gauche as GaucheEn} from '../../Data/English';
 
 export default function Gauche() {
+    let data = GaucheFr;
 
-    let jobTitle = "Développeur Web";
-    let description = "Créatif passionné de l'informatique, dévoué à l'innovation et à l'impact positif.";
-
-    let about = "A propos de moi";
-    let experiences = "Expériences";
-    let projects = "Projets";
-    let education = "Formation";
-    let contact = "Contact";
-    let files = "Fichiers";
-
-
-    let isEnglish = window.location.pathname.includes('/en');
+    let isEnglish = window.location.pathname.includes("/en");
     if (isEnglish) {
-        jobTitle = "Web Developer";
-        description = "Creative computer science student, dedicated to innovation and positive impact.";
-
-        about = "About me";
-        experiences = "Experiences";
-        projects = "Projects";
-        education = "Education";
-        contact = "Contact";
-        files = "Files";
+        data = GaucheEn;
     }
 
 
@@ -35,31 +19,28 @@ export default function Gauche() {
                     Nicolas Goyon
                 </h1>
                 <h2>
-                    {jobTitle}
+                    {data.jobTitle}
                 </h2>
             </header>
             <p>
-                {description}
+                {data.description}
             </p>
             <nav className="vertical">
                 <ul>
                     <li className="active"><a href="#about">
-                        {about}
+                        {data.about}
                     </a></li>
                     <li><a href="#Experiences">
-                        {experiences}
+                        {data.experiences}
                     </a></li>
                     <li><a href="#Projets">
-                        {projects}
+                        {data.projects}
                     </a></li>
                     <li><a href="#Formation">
-                        {education}
+                        {data.education}
                     </a></li>
                     <li><a href="#Contact">
-                        {contact}
-                    </a></li>
-                    <li><a href="#Fichiers">
-                        {files}
+                        {data.contact}
                     </a></li>
                 </ul>
             </nav>

@@ -7,6 +7,13 @@ function mouseouverHandler(e) {
     siblings.forEach((target2) => {
         target2.classList.add("disabled");
     })
+
+    // if itself is li then e.target else e.target.closest("li")
+    if (e.target.tagName != "LI") {
+        e.target.closest("li").classList.remove("disabled");
+        return;
+    }
+
     e.target.classList.remove("disabled");
 }
 
